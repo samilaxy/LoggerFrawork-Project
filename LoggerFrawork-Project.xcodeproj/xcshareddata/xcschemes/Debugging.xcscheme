@@ -28,6 +28,17 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "49D2D9DD293E41A500409F07"
+               BuildableName = "LoggerFrawork-ProjectTests.xctest"
+               BlueprintName = "LoggerFrawork-ProjectTests"
+               ReferencedContainer = "container:LoggerFrawork-Project.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
