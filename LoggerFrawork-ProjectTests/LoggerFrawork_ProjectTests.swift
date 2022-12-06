@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable LoggerFrawork-Project
 
 final class LoggerFrawork_ProjectTests: XCTestCase {
 
