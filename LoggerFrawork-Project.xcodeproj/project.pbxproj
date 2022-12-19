@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491DF78B2950AA5A00BE5222 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DF78A2950AA5A00BE5222 /* Logger.swift */; };
 		49689E33294794BE00610013 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49689E32294794BE00610013 /* File.swift */; };
 		49689E352947952400610013 /* AdditionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49689E342947952400610013 /* AdditionTest.swift */; };
 		49D2D9E1293E41A600409F07 /* LoggerFrawork_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D9E0293E41A600409F07 /* LoggerFrawork_ProjectTests.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491DF78A2950AA5A00BE5222 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		49689E32294794BE00610013 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		49689E342947952400610013 /* AdditionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionTest.swift; sourceTree = "<group>"; };
 		49D2D9DE293E41A500409F07 /* LoggerFrawork-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoggerFrawork-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491DF78C2950AA9400BE5222 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		49D2D9DF293E41A600409F07 /* LoggerFrawork-ProjectTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +82,8 @@
 		49F376C12937C44600001526 = {
 			isa = PBXGroup;
 			children = (
+				491DF78C2950AA9400BE5222 /* New Group */,
+				491DF78A2950AA5A00BE5222 /* Logger.swift */,
 				49F376CC2937C44600001526 /* LoggerFrawork-Project */,
 				49D2D9DF293E41A600409F07 /* LoggerFrawork-ProjectTests */,
 				49F376CB2937C44600001526 /* Products */,
@@ -213,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491DF78B2950AA5A00BE5222 /* Logger.swift in Sources */,
 				49F376D22937C44600001526 /* ViewController.swift in Sources */,
 				49689E33294794BE00610013 /* File.swift in Sources */,
 				49F376CE2937C44600001526 /* AppDelegate.swift in Sources */,
