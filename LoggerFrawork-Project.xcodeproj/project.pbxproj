@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		491DF78B2950AA5A00BE5222 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DF78A2950AA5A00BE5222 /* Logger.swift */; };
-		49689E33294794BE00610013 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49689E32294794BE00610013 /* File.swift */; };
+		491DF7912950B5C000BE5222 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49689E32294794BE00610013 /* Addition.swift */; };
+		491DF7942950B7C000BE5222 /* LoggerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DF7922950B7C000BE5222 /* LoggerTest.swift */; };
+		491DF7952950BAFA00BE5222 /* LoggerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DF7922950B7C000BE5222 /* LoggerTest.swift */; };
+		49689E33294794BE00610013 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49689E32294794BE00610013 /* Addition.swift */; };
 		49689E352947952400610013 /* AdditionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49689E342947952400610013 /* AdditionTest.swift */; };
 		49D2D9E1293E41A600409F07 /* LoggerFrawork_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D9E0293E41A600409F07 /* LoggerFrawork_ProjectTests.swift */; };
 		49F376CE2937C44600001526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F376CD2937C44600001526 /* AppDelegate.swift */; };
@@ -31,7 +34,8 @@
 
 /* Begin PBXFileReference section */
 		491DF78A2950AA5A00BE5222 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		49689E32294794BE00610013 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		491DF7922950B7C000BE5222 /* LoggerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerTest.swift; sourceTree = "<group>"; };
+		49689E32294794BE00610013 /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 		49689E342947952400610013 /* AdditionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionTest.swift; sourceTree = "<group>"; };
 		49D2D9DE293E41A500409F07 /* LoggerFrawork-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoggerFrawork-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D2D9E0293E41A600409F07 /* LoggerFrawork_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFrawork_ProjectTests.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		491DF78C2950AA9400BE5222 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				49689E32294794BE00610013 /* Addition.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -75,6 +80,7 @@
 			children = (
 				49D2D9E0293E41A600409F07 /* LoggerFrawork_ProjectTests.swift */,
 				49689E342947952400610013 /* AdditionTest.swift */,
+				491DF7922950B7C000BE5222 /* LoggerTest.swift */,
 			);
 			path = "LoggerFrawork-ProjectTests";
 			sourceTree = "<group>";
@@ -109,7 +115,6 @@
 				49F376D62937C44A00001526 /* Assets.xcassets */,
 				49F376D82937C44A00001526 /* LaunchScreen.storyboard */,
 				49F376DB2937C44A00001526 /* Info.plist */,
-				49689E32294794BE00610013 /* File.swift */,
 			);
 			path = "LoggerFrawork-Project";
 			sourceTree = "<group>";
@@ -216,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D2D9E1293E41A600409F07 /* LoggerFrawork_ProjectTests.swift in Sources */,
+				491DF7912950B5C000BE5222 /* Addition.swift in Sources */,
+				491DF7942950B7C000BE5222 /* LoggerTest.swift in Sources */,
 				49689E352947952400610013 /* AdditionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +233,8 @@
 			files = (
 				491DF78B2950AA5A00BE5222 /* Logger.swift in Sources */,
 				49F376D22937C44600001526 /* ViewController.swift in Sources */,
-				49689E33294794BE00610013 /* File.swift in Sources */,
+				49689E33294794BE00610013 /* Addition.swift in Sources */,
+				491DF7952950BAFA00BE5222 /* LoggerTest.swift in Sources */,
 				49F376CE2937C44600001526 /* AppDelegate.swift in Sources */,
 				49F376D02937C44600001526 /* SceneDelegate.swift in Sources */,
 			);

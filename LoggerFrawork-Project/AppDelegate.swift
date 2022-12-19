@@ -15,14 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        var env: Logger.Environment = .staging
         #if PROD
-        print("PROD")
+        env = .production
         #elseif DEBUG
-        print("DEBUG")
-        #elseif STAG
-        print("STAGING")
+        env = .debugging
         #endif
-        
+        Logger.shared.configure(userID: "ID1", session: "\(Date())", environment: env)
         return true
     }
 
