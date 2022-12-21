@@ -1,15 +1,18 @@
 //
 //  AdditionTest.swift
-//  LoggerFrawork-ProjectTests
+//  LoggerFrameworkProjectmainTests
 //
-//  Created by Noye Samuel on 12/12/2022.
+//  Created by Noye Samuel on 21/12/2022.
 //
 
 import XCTest
+@testable import LoggerFrameworkProjectmain
 
 final class AdditionTest: XCTestCase {
-   // Create SUT
-    var sut: Addition!
+
+    // Create SUT
+     var sut: Addition!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         sut = Addition()

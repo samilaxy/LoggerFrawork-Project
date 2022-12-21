@@ -1,31 +1,32 @@
 //
 //  Logger.swift
-//  LoggerFrawork-Project
+//  LoggerFrameworkProjectmain
 //
-//  Created by Noye Samuel on 11/12/2022.
+//  Created by Noye Samuel on 21/12/2022.
 //
 
 import Foundation
 
 class Logger {
     static let shared = Logger(environment: .debugging)
-    private var environment: Environment = .debugging
-    private var dateFormat: String
-    private var userID: String
-    private var session: String
-    private var tags: [String]
-    private init(environment: Environment, dateFormat: String = "yyyy-MM-dd HH:mm:ss"){
+     var logMessage = ""
+     var environment: Environment = .debugging
+     var dateFormat: String
+     var userID: String
+     var session: String
+     var tags: [String]
+     init(environment: Environment, dateFormat: String = "yyyy-MM-dd HH:mm:ss"){
         self.environment = environment
         self.dateFormat = dateFormat
         self.userID = ""
         self.session = ""
         self.tags = []
     }
-    func log(_ message: String, severity: Severity = .veryLow) {
+    func log(_ message: String, severity: Severity = .veryLow)-> String {
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         let date = formatter.string(from: Date.now)
-        var logMessage = "[\(String(describing: date))]:[\(severity)]:[\(message)]"
+        logMessage = "[\(String(describing: date))]:[\(severity)]:[\(message)]"
         if !session.isEmpty {
             logMessage += " [\(session)]"
         }
@@ -44,6 +45,7 @@ class Logger {
             print(logMessage )
             break
         }
+        return logMessage
     }
     func veryHigh(_ message: String){
         log(message, severity: .veryHigh)

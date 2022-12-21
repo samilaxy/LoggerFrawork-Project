@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  LoggerFrawork-Project
+//  LoggerFrameworkProjectmain
 //
-//  Created by Noye Samuel on 30/11/2022.
+//  Created by Noye Samuel on 21/12/2022.
 //
 
 import UIKit
@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
         var env: Logger.Environment = .staging
         #if PROD
         env = .production

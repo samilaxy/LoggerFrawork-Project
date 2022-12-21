@@ -14,16 +14,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "49F376C92937C44600001526"
-               BuildableName = "LoggerFrawork-Project.app"
-               BlueprintName = "LoggerFrawork-Project"
-               ReferencedContainer = "container:LoggerFrawork-Project.xcodeproj">
+               BlueprintIdentifier = "4900C68729530AF100A684B1"
+               BuildableName = "LoggerFrameworkProjectmain.app"
+               BlueprintName = "LoggerFrameworkProjectmain"
+               ReferencedContainer = "container:LoggerFrameworkProjectmain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debugging"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
@@ -32,10 +32,10 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49F376C92937C44600001526"
-            BuildableName = "LoggerFrawork-Project.app"
-            BlueprintName = "LoggerFrawork-Project"
-            ReferencedContainer = "container:LoggerFrawork-Project.xcodeproj">
+            BlueprintIdentifier = "4900C68729530AF100A684B1"
+            BuildableName = "LoggerFrameworkProjectmain.app"
+            BlueprintName = "LoggerFrameworkProjectmain"
+            ReferencedContainer = "container:LoggerFrameworkProjectmain.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -44,16 +44,27 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "49D2D9DD293E41A500409F07"
-               BuildableName = "LoggerFrawork-ProjectTests.xctest"
-               BlueprintName = "LoggerFrawork-ProjectTests"
-               ReferencedContainer = "container:LoggerFrawork-Project.xcodeproj">
+               BlueprintIdentifier = "4900C69D29530AF600A684B1"
+               BuildableName = "LoggerFrameworkProjectmainTests.xctest"
+               BlueprintName = "LoggerFrameworkProjectmainTests"
+               ReferencedContainer = "container:LoggerFrameworkProjectmain.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4900C6A729530AF600A684B1"
+               BuildableName = "LoggerFrameworkProjectmainUITests.xctest"
+               BlueprintName = "LoggerFrameworkProjectmainUITests"
+               ReferencedContainer = "container:LoggerFrameworkProjectmain.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debugging"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -66,10 +77,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49F376C92937C44600001526"
-            BuildableName = "LoggerFrawork-Project.app"
-            BlueprintName = "LoggerFrawork-Project"
-            ReferencedContainer = "container:LoggerFrawork-Project.xcodeproj">
+            BlueprintIdentifier = "4900C68729530AF100A684B1"
+            BuildableName = "LoggerFrameworkProjectmain.app"
+            BlueprintName = "LoggerFrameworkProjectmain"
+            ReferencedContainer = "container:LoggerFrameworkProjectmain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,15 +94,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49F376C92937C44600001526"
-            BuildableName = "LoggerFrawork-Project.app"
-            BlueprintName = "LoggerFrawork-Project"
-            ReferencedContainer = "container:LoggerFrawork-Project.xcodeproj">
+            BlueprintIdentifier = "4900C68729530AF100A684B1"
+            BuildableName = "LoggerFrameworkProjectmain.app"
+            BlueprintName = "LoggerFrameworkProjectmain"
+            ReferencedContainer = "container:LoggerFrameworkProjectmain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debugging">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
