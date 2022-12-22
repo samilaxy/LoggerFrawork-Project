@@ -23,14 +23,17 @@ final class LoggerTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         sut = nil
     }
-
-    func testLogger(){
-        //Given
+    
+    func getDate() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = sut.dateFormat
         let date = formatter.string(from: Date.now)
-        
-        let logMessage = "[\(String(describing: date))]:[veryLow]:[dgg]"
+       return date
+    }
+    
+    func testLog(){
+        //Given
+        let logMessage = "[\(String(describing: getDate()))]:[veryLow]:[dgg]"
         
         //When
         let result = sut.log("dgg", severity: .veryLow)
