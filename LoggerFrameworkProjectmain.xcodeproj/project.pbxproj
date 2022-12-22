@@ -20,6 +20,7 @@
 		4900C6BE29530B7700A684B1 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4900C6BD29530B7700A684B1 /* Addition.swift */; };
 		4900C6C029530C1500A684B1 /* AdditionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4900C6BF29530C1500A684B1 /* AdditionTest.swift */; };
 		4900C6C229530E4100A684B1 /* LoggerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4900C6C129530E4100A684B1 /* LoggerTest.swift */; };
+		49FF873E2954AD4300E6DD0B /* UserDefualt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF873D2954AD4300E6DD0B /* UserDefualt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4900C6BD29530B7700A684B1 /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 		4900C6BF29530C1500A684B1 /* AdditionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionTest.swift; sourceTree = "<group>"; };
 		4900C6C129530E4100A684B1 /* LoggerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerTest.swift; sourceTree = "<group>"; };
+		49FF873D2954AD4300E6DD0B /* UserDefualt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefualt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				4900C69929530AF500A684B1 /* Info.plist */,
 				4900C6BB29530B5100A684B1 /* Logger.swift */,
 				4900C6BD29530B7700A684B1 /* Addition.swift */,
+				49FF873D2954AD4300E6DD0B /* UserDefualt.swift */,
 			);
 			path = LoggerFrameworkProjectmain;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FF873E2954AD4300E6DD0B /* UserDefualt.swift in Sources */,
 				4900C69029530AF100A684B1 /* ViewController.swift in Sources */,
 				4900C68C29530AF100A684B1 /* AppDelegate.swift in Sources */,
 				4900C68E29530AF100A684B1 /* SceneDelegate.swift in Sources */,

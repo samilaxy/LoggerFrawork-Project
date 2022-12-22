@@ -74,8 +74,9 @@ class Logger {
         setSession(session: session)
         setEnvironment(environment: environment)
     }
-    func setUserID(userID: String){
+    func setUserID(userID: String) -> String {
         self.userID = userID
+        return userID
     }
     func setDateFormat(dateFormat: String) {
         self.dateFormat = dateFormat
