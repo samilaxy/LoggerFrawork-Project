@@ -27,12 +27,17 @@ final class LoggerTest: XCTestCase {
 
     func testLogger(){
         //Given
+        let formatter = DateFormatter()
+        formatter.dateFormat = sut.dateFormat
+        let date = formatter.string(from: Date.now)
         
-        sut.log("dgg", severity: .veryLow)
-        var logMessage = sut.logMessage
+        let logMessage = "[\(String(describing: date))]:[veryLow]:[dgg]"
+        
         //When
-        var result = sut.log("dgg", severity: .veryLow)
+        let result = sut.log("dgg", severity: .veryLow)
+        
         //Then
         XCTAssertEqual(result, logMessage)
+        XCTAssertEqual(sut.logMessage, logMessage)
     }
 }

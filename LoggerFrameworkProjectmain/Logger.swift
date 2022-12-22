@@ -15,6 +15,7 @@ class Logger {
      var userID: String
      var session: String
      var tags: [String]
+     var date = ""
      init(environment: Environment, dateFormat: String = "yyyy-MM-dd HH:mm:ss"){
         self.environment = environment
         self.dateFormat = dateFormat
@@ -25,7 +26,7 @@ class Logger {
     func log(_ message: String, severity: Severity = .veryLow)-> String {
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
-        let date = formatter.string(from: Date.now)
+        date = formatter.string(from: Date.now)
         logMessage = "[\(String(describing: date))]:[\(severity)]:[\(message)]"
         if !session.isEmpty {
             logMessage += " [\(session)]"
