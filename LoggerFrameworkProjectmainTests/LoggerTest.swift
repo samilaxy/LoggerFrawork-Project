@@ -32,6 +32,7 @@ final class LoggerTest: XCTestCase {
     }
     
     func testLog(){
+        
         //Given
         let logMessage = "[\(String(describing: getDate()))]:[veryLow]:[dgg]"
         
@@ -41,5 +42,28 @@ final class LoggerTest: XCTestCase {
         //Then
         XCTAssertEqual(result, logMessage)
         XCTAssertEqual(sut.logMessage, logMessage)
+    }
+    func testSeverity(){
+        
+        //Given
+        let logMessageVeryHigh = "[\(String(describing: getDate()))]:[veryHigh]:[VeryHigh]"
+        let logMessageHigh = "[\(String(describing: getDate()))]:[high]:[High]"
+        let logMessageModerate = "[\(String(describing: getDate()))]:[moderate]:[Moderate]"
+        let logMessageLow = "[\(String(describing: getDate()))]:[low]:[Low]"
+        let logMessageVeryLow = "[\(String(describing: getDate()))]:[veryLow]:[VeryLow]"
+        
+        //When
+        let resultVeryHigh = sut.severity("VeryHigh", severity: .veryHigh)
+        let resultHigh = sut.severity("High", severity: .high)
+        let resultModerate = sut.severity("Moderate", severity: .moderate)
+        let resultLow = sut.severity("Low", severity: .low)
+        let resultVeryLow = sut.severity("VeryLow", severity: .veryLow)
+        
+        //Then
+        XCTAssertEqual(resultVeryHigh, logMessageVeryHigh)
+        XCTAssertEqual(resultHigh, logMessageHigh)
+        XCTAssertEqual(resultModerate, logMessageModerate)
+        XCTAssertEqual(resultLow, logMessageLow)
+        XCTAssertEqual(resultVeryLow, logMessageVeryLow)
     }
 }

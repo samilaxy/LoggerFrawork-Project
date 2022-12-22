@@ -48,21 +48,27 @@ class Logger {
         }
         return logMessage
     }
-    func veryHigh(_ message: String){
-        log(message, severity: .veryHigh)
+    
+    func severity(_ message: String, severity: Severity) -> String {
+        
+        var severityLog = ""
+        
+        switch severity {
+        case .veryHigh:
+            severityLog =  log(message, severity: .veryHigh)
+        case .high:
+            severityLog =  log(message, severity: .high)
+        case .moderate:
+            severityLog =  log(message, severity: .moderate)
+        case .low:
+            severityLog =  log(message, severity: .low)
+        case .veryLow:
+            severityLog = log(message, severity: .veryLow)
+        }
+        
+        return severityLog
     }
-    func high(_ message: String){
-        log(message, severity: .high)
-    }
-    func moderate(_ message: String){
-        log(message, severity: .moderate)
-    }
-    func loe(_ message: String){
-        log(message, severity: .low)
-    }
-    func veryLow(_ message: String){
-        log(message, severity: .veryLow)
-    }
+    
     func configure(userID: String, session: String, environment: Environment){
         setUserID(userID: userID)
         setSession(session: session)
