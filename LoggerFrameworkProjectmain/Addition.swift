@@ -1,8 +1,8 @@
 //
-//  File.swift
-//  LoggerFrawork-Project
+//  Addition.swift
+//  LoggerFrameworkProjectmain
 //
-//  Created by Noye Samuel on 12/12/2022.
+//  Created by Noye Samuel on 21/12/2022.
 //
 
 import Foundation

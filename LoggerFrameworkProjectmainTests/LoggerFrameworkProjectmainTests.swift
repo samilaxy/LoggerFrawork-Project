@@ -1,13 +1,14 @@
 //
-//  AdditionTest.swift
-//  LoggerFrawork-ProjectTests
+//  LoggerFrameworkProjectmainTests.swift
+//  LoggerFrameworkProjectmainTests
 //
-//  Created by Noye Samuel on 12/12/2022.
+//  Created by Noye Samuel on 21/12/2022.
 //
 
 import XCTest
+@testable import LoggerFrameworkProjectmain
 
-final class AdditionTest: XCTestCase {
+final class LoggerFrameworkProjectmainTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
