@@ -9,14 +9,14 @@ import Foundation
 
 class Logger {
     static let shared = Logger(environment: .debugging)
-     var logMessage = ""
-     var environment: Environment = .debugging
-     var dateFormat: String
-     var userID: String
-     var session: String
-     var tags: [String]
-     var date = ""
-     init(environment: Environment, dateFormat: String = "yyyy-MM-dd HH:mm:ss"){
+    var logMessage = ""
+    var environment: Environment = .debugging
+    var dateFormat: String
+    var userID: String
+    var session: String
+    var tags: [String]
+    var date = ""
+    init(environment: Environment, dateFormat: String = "yyyy-MM-dd HH:mm:ss"){
         self.environment = environment
         self.dateFormat = dateFormat
         self.userID = ""
@@ -40,7 +40,7 @@ class Logger {
             break
         case .production:
             // TODO: log this to file instead of printing
-            saveLogToFile(logMessage)
+            saveLogToFile(logMessage, fileName: "\(userID)-logMessages.txt")
             break
         case .staging:
             print(logMessage )
@@ -90,10 +90,41 @@ class Logger {
     func addTag(tag: String) {
         self.tags.append(tag)
     }
+    
     // MARK: File Management
-    private func saveLogToFile(_ message: String) {
+    private func saveLogToFile(_ log: String, fileName: String) {
         // Use FileManager to create a new file and write the log string to it
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileURL = documentsURL.appendingPathComponent(fileName)
+        
+        do {
+            try log.write(to: fileURL, atomically: true, encoding: .utf8)
+        } catch {
+            print("Error writing log to file: \(error.localizedDescription)")
+        }
     }
+    
+    // MARK: File Management to read to file
+    func readFromFile(fileName: String) -> String? {
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileURL = documentsURL.appendingPathComponent(fileName)
+        
+        if fileManager.fileExists(atPath: fileURL.path) {
+            if let fileContents = fileManager.contents(atPath: fileURL.path) {
+                return String(data: fileContents, encoding: .utf8)
+            }
+            else {
+                print("Error reading contents of file at URL: \(fileURL)")
+                return nil
+            }
+        } else {
+            print("File does not exist at URL: \(fileURL)")
+            return nil
+        }
+    }
+    
     // MARK: Firebase
     private func pushLogToFirebase(logString: String) {
         // Use Firebase SDK to authenticate with Firebase and upload the log string to a designated storage location
