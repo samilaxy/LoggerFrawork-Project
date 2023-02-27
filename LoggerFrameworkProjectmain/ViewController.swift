@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  LoggerFrawork-Project
+//  LoggerFrameworkProjectmain
 //
-//  Created by Noye Samuel on 30/11/2022.
+//  Created by Noye Samuel on 21/12/2022.
 //
 
 import UIKit
@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        Logger.shared.log("dgg", severity: .veryLow)
     }
 
 

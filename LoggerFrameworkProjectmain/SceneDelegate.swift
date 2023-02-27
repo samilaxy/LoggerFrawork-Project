@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  LoggerFrawork-Project
+//  LoggerFrameworkProjectmain
 //
-//  Created by Noye Samuel on 30/11/2022.
+//  Created by Noye Samuel on 21/12/2022.
 //
 
 import UIKit
